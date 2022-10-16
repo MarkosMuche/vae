@@ -1,5 +1,8 @@
 
+from dataset import x_test, x_train
+from model import vae_model
 
+import matplotlib.pyplot as plt
 vae_model.compile(optimizer='adam', loss=losses.MeanSquaredError())
 
 history = vae_model.fit(x_train, x_train, 
